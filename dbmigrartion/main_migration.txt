@@ -1,0 +1,47 @@
+CREATE SCHEMA `project_schema` ;
+
+CREATE TABLE `project_schema`.`user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(200) NOT NULL,
+  `date_added` DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `project_schema`.`user_keyword` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `keyword` VARCHAR(45) NOT NULL,
+  `date_added` DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (`id`));
+
+ALTER TABLE `project_schema`.`user_keyword` 
+ADD CONSTRAINT `fk`
+  FOREIGN KEY (`user_id`)
+  REFERENCES `project_schema`.`user` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+CREATE TABLE `project_schema`.`crawler_1_data` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `url` VARCHAR(200) NOT NULL,
+  `raw_html_data` MEDIUMTEXT NOT NULL,
+  `plain_position_description` MEDIUMTEXT NOT NULL,
+  `details` MEDIUMTEXT NOT NULL,
+  `highlights` MEDIUMTEXT NOT NULL,
+  `company` MEDIUMTEXT NOT NULL,
+  `deadline` MEDIUMTEXT NOT NULL,
+  `status` INT NOT NULL,
+  `date_requested` DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `project_schema`.`email` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `title` VARCHAR(255) NOT NULL DEFAULT 'Today positions available just for you',
+  `message_body` MEDIUMTEXT NULL,
+  `status` INT NOT NULL,
+  `date_created` DATETIME NOT NULL DEFAULT NOW(),
+  `date_sent` DATETIME NULL DEFAULT NOW(),
+  PRIMARY KEY (`id`));
+
+
