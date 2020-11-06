@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Keywords input form")
-root.geometry('800x300')
+root.geometry('800x150')
 
 def close():
     root.destroy()
@@ -10,7 +10,7 @@ def close():
 
 def button_clicked():
     entered_email=email_field.get()
-    entered_keywords = keywords_field.get(1.0, END)
+    entered_keywords = keywords_field.get()
     print (entered_email)
     print (entered_keywords)
     return entered_email, entered_keywords
@@ -19,8 +19,8 @@ def button_clicked():
 tip1=Label(root,text="Enter your email here:")
 email_field = Entry(root, width=80)
 tip2=Label(root,text="Enter keywords here:")
-keywords_field = Text(root, width=130, height=3)
-submit_button = Button(root, text="Submit", width=15, height=5, activebackground="green", command=button_clicked)
+keywords_field = Entry(root, width=130)
+submit_button = Button(root, text="Submit", width=15, height=3, activebackground="green", command=button_clicked)
 
 tip1.pack()
 email_field.pack()
