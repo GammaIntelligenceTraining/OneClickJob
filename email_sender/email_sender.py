@@ -12,16 +12,16 @@ email_input = 'roman.kutselepa@gmail.com'
 
 # Connection to database
 
-conn = mysql.connector.connect(database='project_schema', host='localhost', user='root', password='123456789')
-cursor = conn.cursor()
-cursor.execute("SELECT usr.id, usr.email, email.title, email.message_body FROM project_schema.user_data AS usr "
-               "INNER JOIN project_schema.email AS email ON email.user_id = usr.id AND usr.email='" + email_input + "'")
-data = cursor.fetchone()
-user_id = data[0]
-email = data[1]
-email_title = data[2]
-email_body = data[3]
-print(data)
+# conn = mysql.connector.connect(database='project_schema', host='localhost', user='root', password='123456789')
+# cursor = conn.cursor()
+# cursor.execute("SELECT usr.id, usr.email, email.title, email.message_body FROM project_schema.user_data AS usr "
+#                "INNER JOIN project_schema.email AS email ON email.user_id = usr.id AND usr.email='" + email_input + "'")
+# data = cursor.fetchone()
+# user_id = data[0]
+# email = data[1]
+# email_title = data[2]
+# email_body = data[3]
+# print(data)
 
 # Add data to MySQL table
 # cursor.execute("INSERT INTO `user_data` (`email`) VALUES ('" + email_input + "')")
@@ -36,23 +36,22 @@ INNER JOIN project_schema.email AS email ON email.user_id = usr.id'''
 
 # Creating email
 msg = EmailMessage()
-msg['Subject'] = email_title
+msg['Subject'] = 'Test message'
 msg['From'] = 'python@mrartful.com'
 msg['To'] = 'mr.artfulx@gmail.com'
 
 msg.set_content('This is string sent by Python script')
-# msg.add_alternative("""\
-#         <!DOCTYPE html>
-#         <html>
-#             <body>
-#                 <h1 style="color: red;">What is in a lava lamp and how does it work?</h1>
-#                 <p style="color: grey;">This is a test message sent to you by a small script on Python</p>
-#                 <p style="color: grey;">The lamp contains blobs of coloured wax inside a glass vessel filled with clear or translucent liquid; the wax rises and falls as its density changes due to heating from an incandescent light bulb underneath the vessel. The appearance of the wax is suggestive of pāhoehoe lava, hence the name.</p>
-#             </body>
-#         </html>
-#         """,
-#                     subtype='html')
-msg.add_alternative(email_body)
+msg.add_alternative("""\
+        <!DOCTYPE html>
+        <html>
+            <body>
+                <h1 style="color: red;">What is in a lava lamp and how does it work?</h1>
+                <p style="color: grey;">This is a test message sent to you by a small script on Python</p>
+                <p style="color: grey;">The lamp contains blobs of coloured wax inside a glass vessel filled with clear or translucent liquid; the wax rises and falls as its density changes due to heating from an incandescent light bulb underneath the vessel. The appearance of the wax is suggestive of pāhoehoe lava, hence the name.</p>
+            </body>
+        </html>
+        """,
+                    subtype='html')
 
 
 # Sending email using smtp connection
