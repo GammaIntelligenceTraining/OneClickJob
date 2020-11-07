@@ -1,0 +1,2 @@
+ALTER TABLE `project_schema`.`crawler_1_data`
+CHANGE COLUMN `status` `status` INT(11) NOT NULL DEFAULT 0 ;
