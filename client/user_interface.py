@@ -1,4 +1,8 @@
 from tkinter import *
+import mysql.connector
+
+conn = mysql.connector.connect(user='root', password='123456', host='127.0.0.1')
+cursor = conn.cursor()
 
 root = Tk()
 root.title("Keywords input form")
@@ -13,7 +17,10 @@ def button_clicked():
     entered_keywords = keywords_field.get()
     print (entered_email)
     print (entered_keywords)
-    return entered_email, entered_keywords
+    query_adding_user = "INSERT INTO `project_schema`.`user1` (`email`) VALUES ('"+entered_email+"');"
+    cursor.execute(query_adding_user)
+    print("Data is saved")
+
 
 
 tip1=Label(root,text="Enter your email here:")
