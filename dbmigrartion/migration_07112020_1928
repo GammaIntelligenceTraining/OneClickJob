@@ -1,0 +1,3 @@
+TRUNCATE project_schema.crawler_1_data;
+ALTER TABLE `project_schema`.`crawler_1_data`
+ADD UNIQUE INDEX `index2` (`url` ASC) VISIBLE;

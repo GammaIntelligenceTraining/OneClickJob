@@ -25,18 +25,15 @@ def cleanhtml(raw_html):
   return cleantext
 
 def getLinks(url):
-    html_page = urllib3.urlopen(url)
-    soup = BeautifulSoup(html_page)
+    html_page = urllib.request.urlopen(url)
+    soup = BeautifulSoup(html_page, features="html.parser")
     links = []
-
-    for link in soup.findAll('a', attrs={'href': re.compile("^http://")}):
+    for link in soup.findAll('a'):
         links.append(link.get('href'))
-
     return links
 
 os.system('color')
 print(colored("One click job finder", 'blue', 'on_white', ['blink']))
-print("http://www.gamma-intelligence.com")
 # Getting IP address
 #ip = "1.1.1.1"
 ip = get('https://api.ipify.org').text
@@ -63,13 +60,12 @@ db = config['mysqlDB']['db']
 #mysql_table = config['mysql_table']['table']
 position_storing_table = config['mysql_table']['table']
 position_select_query = config['mysql_table']['position_select_query']
+order = config['mysql_table']['select_order']
 main_url = config['Link']['link']
 print(main_url)
 pause = config['pause']["value"]
-version = config['general']['version']
 
 config = {
-
     'user': "" + usr + "",
     #'password': "" + pas + "",
     'host': "" + host + "",
@@ -78,68 +74,73 @@ config = {
     #'auth_plugin': "" + auth + "",
     'raise_on_warnings': True,
 }
+print(config)
 options = Options()
 options.headless = False
 _browser_profile = webdriver.FirefoxProfile()
 _browser_profile.set_preference("dom.webnotifications.enabled", False)
-#_browser_profile.set_preference("general.useragent.override", "Gamma Intelligence Web Crawler")
+#_browser_profile.set_preference("general.useragent.override", "Here is your browser")
 
 driver = webdriver.Firefox(_browser_profile, options=options)
 driver.maximize_window()
-#driver.h
+
 
 link = mysql.connector.connect(**config)
 crawler_start_time = datetime.now()
 print(crawler_start_time)
+all_urls = getLinks(main_url)
+regexp = re.compile("/vacancy/[0-9]+")
+cursor = link.cursor(buffered=True)
 
+#Getting only unique URLs
+# TODO: refactor as this method could use sometimes a lot of memory
+unique_urls = set(all_urls)
+
+'''for x in unique_urls:
+    if regexp.search(x):
+        result = regexp.search(x)
+        sql_query="REPLACE INTO project_schema.crawler_1_data (url,raw_html_data," \
+                  "plain_position_description,details,highlights,company,deadline) " \
+                  "VALUES ('https://www.cv.ee" + result.group(0) \
+                  + "','Empty','Empty','Empty','Empty','Empty','Empty')"
+        cursor.execute(sql_query)'''
+
+#Starting the parsing
+
+query = position_select_query + ' ' + order
+print(query)
+
+#Starting the query cycle
 while True:
-    cursor = link.cursor(buffered=True)
-    if link.is_connected():
-        a = 1
-        #print(colored("MySQL conection alive","green"))
-    else:
-        print(colored("MySQL connection failed","red"))
-
-    #Executing query with highest priority
-    try:
-        cursor.execute(position_select_query)
-        row = cursor.fetchone()[0]
-        driver.get(row)
-    except:
-        cursor.execute(select_query_low)
-        row = cursor.fetchone()[0]
-        driver.get(main_url + str(row))
-
-    #Marking automatically selected record as reserved (status=2)
-    print(colored(row, "green"))
-    #cursor.execute("UPDATE city24_pool SET checked=2 WHERE page_id=" + str(row))
+    cursor.execute(query)
+    url = cursor.fetchone()[0]
+    print(url)
+    driver.get(url)
+    elem = driver.find_element_by_xpath("//*")
+    source_code = elem.get_attribute("outerHTML")
+    time.sleep(2)
+    tabs1 = driver.find_elements_by_class_name("react-tabs__tab")
+    #print(len(tabs1))
+    time.sleep(2)
+    tabs1[0].click()
+    #print(driver.find_element_by_css_selector('span.react-tabs[role="tabpanel"]'))
+    details = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]').text
+    print(details)
+    time.sleep(2)
+    tabs1[1].click()
+    primary_info = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]').text
+    print(primary_info)
+    time.sleep(2)
+    tabs1[2].click()
+    company_info = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]').text
+    print(company_info)
+    deadline = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/aside/div[1]/div/div/div/div[1]/span/span').text
+    print(deadline)
+    update_query="UPDATE `project_schema`.`crawler_1_data` SET plain_position_description = '" + primary_info \
+                 + "',details = '" + details + "',company = '" + company_info + "',deadline = '" + deadline \
+                 + "', status = 1, date_requested=CURRENT_TIMESTAMP WHERE url='" + url + "'"
+    print(update_query)
+    cursor.execute(update_query)
     link.commit()
 
-    html = driver.page_source
-    soup = BeautifulSoup(html, "html.parser")
-    #company_name = soup.find("div", {"class": "accordion-inner"})
-    page_source=soup.find("div", {"class": "itemTitleColumnLeft"})
 
-    if str(page_source) != 'None':
-        # -----Parsing the existing page objects------#
-        print("********************")
-        #--Type--
-        type = cleanhtml(str(soup.find("div",  {"class": "itemTitleColumnLeft"}).h1.span))
-        print(type)
-        update_stmt = "UPDATE crawler_1_data SET status=1, date_requested=NOW(), ip='" + ip + "' where url='" + str(row) + "'"
-        cursor.execute(update_stmt)
-        link.commit()
-        print(colored("Position " + str(row) + " inserted successfully", "green"))
-        #pause
-
-    else:
-        update_stmt = "UPDATE crawler_1_data SET status=1, date_requested=NOW(), ip='" + ip + "' where url='" + str(row) + "'"
-        cursor.execute(update_stmt)
-        link.commit()
-        continue
-
-    ##End of inserting the company data
-    #driver.back()
-    time.sleep(int(pause))
-    #driver.close()
-print("Crawler alive time:" + str((datetime.now()-crawler_start_time)))
