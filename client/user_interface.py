@@ -1,7 +1,7 @@
 from tkinter import *
 import mysql.connector
 
-conn = mysql.connector.connect(user='root', password='123456', host='127.0.0.1')
+conn = mysql.connector.connect(user='root', password='1234', host='169.254.19.167', database='project_schema')
 cursor = conn.cursor()
 
 root = Tk()
@@ -17,11 +17,15 @@ def button_clicked():
     entered_keywords = keywords_field.get()
     print (entered_email)
     print (entered_keywords)
-    query_adding_user = "INSERT INTO `project_schema`.`user1` (`email`) VALUES ('"+entered_email+"');"
+    query_adding_user = "INSERT INTO `user` (`email`) VALUES ('"+entered_email+"');"
     cursor.execute(query_adding_user)
-    print("Data is saved")
-
-
+    query_id = "SELECT id FROM project_schema.user WHERE email = '" + entered_email + "'"
+    cursor.execute(query_id)
+    id = cursor.fetchone()[0]
+    id=str(id)
+    query_adding_keywords = "INSERT INTO `user_keyword` (`user_id`,`keyword`) VALUES ('" +id+ "','"+entered_keywords+"');"
+    cursor.execute(query_adding_keywords)
+    conn.commit()
 
 tip1=Label(root,text="Enter your email here:")
 email_field = Entry(root, width=80)
@@ -36,5 +40,6 @@ keywords_field.pack()
 submit_button.pack(side=BOTTOM)
 
 root.mainloop()
+conn.close()
 
 
