@@ -1,0 +1,25 @@
+<a class="jsx-1471379408 vacancy-item__logo hide-mobile" href="/vacancy/82542/cv-online-klient/tootmisjuht">
+<img src="/api/v1/files-service/1c3c81cc-bfc7-4482-9d16-d12cd1b6d8f5" alt="TOOTMISJUHT" class="jsx-1471379408"/>
+</a>
+<div class="jsx-1471379408 vacancy-item__content">
+<a class="jsx-1471379408" href="/vacancy/82542/cv-online-klient/tootmisjuht">
+<span class="jsx-1471379408 vacancy-item__title">TOOTMISJUHT</span>
+<div class="jsx-1471379408 vacancy-item__info">
+<div class="jsx-1471379408 vacancy-item__info-main">CV-Online klient<span class="jsx-1471379408 vacancy-item__locations">
+<span class="jsx-1471379408 hide-mobile">\xc2\xa0\xe2\x80\x94\xc2\xa0</span>V\xc3\xb5ru, V\xc3\xb5rumaa, Eesti</span>
+<div class="jsx-1471379408 vacancy-item__info-secondary">
+<span class="jsx-1471379408 secondary-text">Avaldatud 6 p\xc3\xa4eva tagasi</span>
+<span class="jsx-1471379408 vacancy-item__info-labels hide-mobile">
+<span class="jsx-1471379408 vacancy-item__premium-label">
+<span>Premium</span>
+</span>
+</span>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</li>
+<li class="jsx-3752991021 jsx-1193941219 vacancies-list__item">
+<div class="jsx-1471379408 

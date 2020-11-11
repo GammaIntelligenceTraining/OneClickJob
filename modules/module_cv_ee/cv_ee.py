@@ -86,11 +86,9 @@ _browser_profile.set_preference("dom.webnotifications.enabled", False)
 driver = webdriver.Firefox(_browser_profile, options=options)
 driver.maximize_window()
 
-
 link = mysql.connector.connect(**config)
 crawler_start_time = datetime.now()
 print(crawler_start_time)
-
 
 cursor = link.cursor(buffered=True)
 
@@ -120,12 +118,11 @@ while True:
     url = cursor.fetchone()[0]
     print(url)
     driver.get(url)
-    elem = driver.find_element_by_xpath("//*")
-    source_code = elem.get_attribute("outerHTML")
+    #elem = driver.find_element_by_xpath("//*")
+    #source_code = elem.get_attribute("outerHTML")
     time.sleep(2)
     description = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/header[2]/div/div[2]/h2').text
     print(description)
-
     company = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/header[2]/div/div[2]/h2/span').text
     print(company)
 
