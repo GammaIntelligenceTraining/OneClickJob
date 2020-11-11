@@ -1,6 +1,6 @@
 from tkinter import *
 import mysql.connector
-import time
+
 
 conn = mysql.connector.connect(user='root', password='123456', host='127.0.0.1', database='project_schema')
 cursor = conn.cursor()
