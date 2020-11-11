@@ -615,3 +615,290 @@ TimedPromise@chrome://marionette/content/sync.js:213:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
 webdriverClickElement@chrome://marionette/content/interaction.js:179:31
 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+1604775206288	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileTkp7r4"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604775212897	Marionette	INFO	Listening on port 56750
+1604775213526	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604775297525	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileYgc8At"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604775304610	Marionette	INFO	Listening on port 57502
+1604775304673	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604775401612	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileGcr3mD"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604775408824	Marionette	INFO	Listening on port 58354
+1604775409289	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604775492263	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilejzh67B"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604775500988	Marionette	INFO	Listening on port 59074
+1604775501658	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604775977974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilejrUTeT"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604775982603	Marionette	INFO	Listening on port 62379
+1604775982841	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Unable to read VR Path Registry from C:\Users\Dell\AppData\Local\openvr\openvrpaths.vrpath
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1604776239720	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofile1CbIjC"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604776245701	Marionette	INFO	Listening on port 63640
+1604776246093	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604776616307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilejx5xWt"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604776620227	Marionette	INFO	Listening on port 49576
+1604776620522	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileM2L3gP"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604776680519	Marionette	INFO	Listening on port 50009
+1604776680621	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilepBBXrY"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604776720089	Marionette	INFO	Listening on port 50329
+1604776720168	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+1604776823646	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileW59aOl"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604776828477	Marionette	INFO	Listening on port 51079
+1604776828988	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604777195292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileBfIjSo"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777199840	Marionette	INFO	Listening on port 53219
+1604777200106	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604777245112	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileq0ZntW"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777249515	Marionette	INFO	Listening on port 53639
+1604777249904	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilepI0IkR"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777301249	Marionette	INFO	Listening on port 53986
+1604777301774	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://static-exp1.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+1604777408116	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileEseHsa"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777412160	Marionette	INFO	Listening on port 54599
+1604777412300	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604777501687	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileufkzut"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777505784	Marionette	INFO	Listening on port 55177
+1604777505870	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604777592943	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileQTCkPJ"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777597097	Marionette	INFO	Listening on port 55584
+1604777597146	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilekYNIpx"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604777707482	Marionette	INFO	Listening on port 56300
+1604777707948	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+1604778257183	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileje41Dr"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604778263643	Marionette	INFO	Listening on port 58958
+1604778263716	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+1604779973567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileCedeWy"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604779975949	Marionette	INFO	Listening on port 51932
+1604779976228	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+1604783896754	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofile3kytzz"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604783900796	Marionette	INFO	Listening on port 58932
+1604783900904	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://static-exp1.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+[Child 33748, MediaDecoderStateMachine #1] WARNING: Decoder=23ddc328800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3471
+[Child 33748, MediaDecoderStateMachine #1] WARNING: Decoder=23ddc328800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3471
+[Child 33748, MediaDecoderStateMachine #1] WARNING: Decoder=23ddc328800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3471
+JavaScript error: https://static-exp3.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+JavaScript error: https://static-exp3.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+JavaScript warning: https://www.nobeldigital.ee/tule-tiimi/veebiarendaja/, line 4: unreachable code after return statement
+JavaScript warning: https://www.nobeldigital.ee/tule-tiimi/veebiarendaja/ line 19 > eval, line 4: unreachable code after return statement
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: https://static-exp1.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileko77lY"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604786375165	Marionette	INFO	Listening on port 58226
+1604786375534	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+[Child 47100, MediaDecoderStateMachine #1] WARNING: Decoder=269739efc00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3471
+[Child 47100, MediaDecoderStateMachine #1] WARNING: Decoder=269739e7c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3471
+[Child 47100, MediaDecoderStateMachine #1] WARNING: Decoder=269739e7c00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> __cdecl mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3471
+JavaScript error: https://tootukassa.recruitlab.ee/public/landing/19-karjaariinfospetsialist, line 1: ReferenceError: iFrameResize is not defined
+JavaScript error: https://tootukassa.recruitlab.ee/public/landing/19-karjaariinfospetsialist, line 1: ReferenceError: iFrameResize is not defined
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+Exiting due to channel error.
+Exiting due to channel error.
+1604788208663	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileUJ21bY"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604788212221	Marionette	INFO	Listening on port 52489
+1604788212301	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://static-exp1.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.youtube.com/s/player/16e41f55/www-embed-player.vflset/www-embed-player.js, line 474: NS_ERROR_NOT_INITIALIZED: 
+Exiting due to channel error.
+Exiting due to channel error.
+1604807435561	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileDWrxyq"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604807441116	Marionette	INFO	Listening on port 55433
+1604807441334	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://consent.cookiebot.com/uc.js, line 1: SecurityError: Permission denied to access property "pathname" on cross-origin object
+JavaScript error: https://consent.cookiebot.com/uc.js, line 1: TypeError: CookieConsent is undefined
+JavaScript error: https://consent.cookiebot.com/uc.js, line 1: TypeError: CookieConsent is undefined
+Exiting due to channel error.
+Exiting due to channel error.
+gram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilefIjpBw"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604808556400	Marionette	INFO	Listening on port 53685
+1604808556530	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+1604832568678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofiletdY51M"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604832572024	Marionette	INFO	Listening on port 49622
+1604832572317	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+1604839882001	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilekgVxZp"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604839889437	Marionette	INFO	Listening on port 64111
+1604839889483	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://consent.cookiebot.com/uc.js, line 1: SecurityError: Permission denied to access property "pathname" on cross-origin object
+JavaScript error: https://consent.cookiebot.com/uc.js, line 1: TypeError: CookieConsent is undefined
+JavaScript error: https://consent.cookiebot.com/uc.js, line 1: TypeError: CookieConsent is undefined
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://tootukassa.recruitlab.ee/public/landing/23-programmijuht, line 1: ReferenceError: iFrameResize is not defined
+JavaScript error: https://tootukassa.recruitlab.ee/public/landing/23-programmijuht, line 1: ReferenceError: iFrameResize is not defined
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://assets.phenompeople.com/CareerConnectResources/common/js/vendor/mapbox-gl-v1.js, line 29: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript error: https://static-exp3.licdn.com/sc/h/7dt162oar7uci911egb332w3g,44hhbxag3hinac547ym9vby09,5jratctnqzzuc1057yivxswgf,9zz2lhu3eq1epk7sq1t8cdb5s,eound1d1xhqm86h7g2p57b94l,edgsl2z4e4gk56cy2m5kbpp1q,acgipb6zomeaovod456pb7yjs,bctwwqj7p01tcj2smshz2bboe,bftaa82sjwcbrohoe28skni7b,58m2n4boqb1vxfd6hgd34auwd,di2107u61yb11ttimo0s2qyh2,oj1awm2qygfeios7s2x0fa61,5ms6g95rjk28v6utub7tqsm6p,dw2b2bmrlx7m31av10jvin21k,4z7y569rucgjkitpdzpd0lr56,d10ox4iv2fu2pcnng02u8mlmn,dksuef1kjeuyovuvqowr79mf0,cfabcg4u1cj0em4yissh5mfxu,euwg0kjg0qyoxmsz2my965j4r, line 57: SecurityError: The operation is insecure.
+1604924844452	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofilevmsZmh"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604924847602	Marionette	INFO	Listening on port 60463
+1604924848082	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+1604941208044	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileMxHr7F"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604941210653	Marionette	INFO	Listening on port 50324
+1604941210680	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
+1604941277615	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:228:19
+TimedPromise@chrome://marionette/content/sync.js:213:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1604941994406	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileTWYObB"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604941996965	Marionette	INFO	Listening on port 50933
+1604941997031	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 271: NS_ERROR_FAILURE: Should pass a non-null uri
