@@ -3,7 +3,6 @@ import os
 import time
 import mysql.connector
 import re
-import pandas as pd
 from requests import get
 from decimal import *
 from bs4 import BeautifulSoup
@@ -34,7 +33,7 @@ def getLinks(url):
 
 os.system('color')
 #Set start clean mode True only if you would like to rebuild all links
-start_clean_mode = False
+start_clean_mode = True
 print(colored("One click job finder", 'blue', 'on_white', ['blink']))
 # Getting IP address
 #ip = "1.1.1.1"
@@ -56,7 +55,7 @@ print("Version:" + config['general']['version'] + " Release date: "+ config['gen
 host = config['mysqlDB']['host']
 port = config['mysqlDB']['port']
 usr = config['mysqlDB']['user']
-#pas = config['mysqlDB']['pass']
+pas = config['mysqlDB']['pass']
 db = config['mysqlDB']['db']
 #auth = config['mysqlDB']['auth_plugin']
 #mysql_table = config['mysql_table']['table']
@@ -69,7 +68,7 @@ pause = config['pause']["value"]
 
 config = {
     'user': "" + usr + "",
-    #'password': "" + pas + "",
+    'password': "" + pas + "",
     'host': "" + host + "",
     'port': "" + port + "",
     'database': "" + db + "",
