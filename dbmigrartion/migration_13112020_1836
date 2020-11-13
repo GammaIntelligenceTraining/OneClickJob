@@ -1,0 +1,8 @@
+CREATE TABLE `project_schema`.`user_valid_links` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `link` VARCHAR(245) NOT NULL,
+  `created_on` DATETIME NOT NULL DEFAULT NOW(),
+  `handled_status` INT NOT NULL DEFAULT 0,
+  `handled_on` DATETIME NULL,
+  PRIMARY KEY (`id`));
