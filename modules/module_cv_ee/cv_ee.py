@@ -130,23 +130,27 @@ while True:
 
     tabs1 = driver.find_elements_by_class_name("react-tabs__tab")
     #print(len(tabs1))
-    time.sleep(2)
+    time.sleep(1)
     tabs1[0].click()
     #print(driver.find_element_by_css_selector('span.react-tabs[role="tabpanel"]'))
     details = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]').text
     details = str(details).replace("'","")
     details = str(details).replace('"', "")
-    time.sleep(2)
+    time.sleep(1)
     tabs1[1].click()
     primary_info = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]').text
     print(primary_info)
-    time.sleep(2)
+    time.sleep(1)
     tabs1[2].click()
 
     company_info = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]').text
     print(company_info)
-    deadline = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/aside/div[1]/div/div/div/div[1]/span/span').text
-    print(deadline)
+    try:
+        deadline = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div/div[2]/aside/div[1]/div/div/div/div[1]/span/span').text
+    except:
+        deadline = driver.find_element_by_xpath('html/body/div[1]/div[2]/div[2]/div/div/div[2]/aside/div[1]/div/div/span').text
+    finally:
+        print(deadline)
     update_query="UPDATE `project_schema`.`crawler_1_data` SET plain_position_description = '" + position \
                  + "',details = '" + details + "',company = '" + company + "',deadline = '" + deadline \
                  + "', status = 1, date_requested=CURRENT_TIMESTAMP WHERE url='" + url + "'"
