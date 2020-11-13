@@ -1,37 +1,48 @@
 from tkinter import *
 import mysql.connector
-
+import re
 
 conn = mysql.connector.connect(user='root', password='123456', host='127.0.0.1', database='project_schema')
 cursor = conn.cursor()
+
 
 def start_interface():
     root = Tk()
     root.title("Keywords input form")
     root.geometry('800x150')
 
-    #функция для кнопки "Submit", которая отправляет данные пользователя в БД
-    #(эл почту, ключевые слова), а затем стрирает введенные данные из полей ввода
+    # function for the "Submit" button (saving email and keywords into DB and deleting data from fields)
     def button_clicked():
 
-        entered_email=email_field.get()
+        entered_email = email_field.get()
         entered_keywords = keywords_field.get()
-        print (entered_email)
-        print (entered_keywords)
-        #проверка на пустой ввод
-        if entered_email.isalnum() and entered_keywords.isalnum():
-        #запись в БД эл почты юзера в таблицу "user"
-            query_adding_user = "INSERT INTO `user` (`email`) VALUES ('"+entered_email+"');"
+        print(entered_email)
+        print(entered_keywords)
+
+        # functions for accessing the data base:
+        # insert email into the "user" table
+        def query_adding_user():
+            query_adding_user = "INSERT INTO `user` (`email`) VALUES ('" + entered_email + "');"
             cursor.execute(query_adding_user)
 
-            #получение id записанного юзера из балицы "user"
-            query_id = "SELECT id FROM project_schema.user WHERE email = '" + entered_email + "'"
-            cursor.execute(query_id)
+        # get user id from the "user" table
+        def query_getting_id():
+            query_getting_id = "SELECT id FROM project_schema.user WHERE email = '" + entered_email + "'"
+            cursor.execute(query_getting_id)
             id = cursor.fetchone()[0]
-            id=str(id)
+            return id
 
-            #разбивка строки, которую ввел юзер на отдельные слова (кейворды) с удалением
-            #лишних пробелов и одинаковых слов
+        # insert user id and keywords into the "user_keyword" table
+        def query_adding_keywords():
+            keyword_set = creation_keyword_set()
+            for keyword in keyword_set:
+                id = str(query_getting_id())
+                query_adding_keywords = "INSERT INTO `user_keyword` (`user_id`,`keyword`) VALUES ('" + id + "','" + keyword + "');"
+                cursor.execute(query_adding_keywords)
+                conn.commit()
+
+        # create keywords set from entered string (with deleting extra spaces and duplicate words)
+        def creation_keyword_set():
             raw_keywords_list = entered_keywords.split(",")
             print(raw_keywords_list)
             keyword_list = []
@@ -41,31 +52,38 @@ def start_interface():
             print(keyword_list)
             keyword_set = set(keyword_list)
             print(keyword_set)
+            return keyword_set
 
-            #запись id юзера и кейвордов юзера в БД в таблицу "user_keyword"
-            for keyword in keyword_set:
-                query_adding_keywords = "INSERT INTO `user_keyword` (`user_id`,`keyword`) VALUES ('" +id+ "','"+keyword+"');"
-                cursor.execute(query_adding_keywords)
-                conn.commit()
-
-            #вывод подсказки "данные сохранены"
-            tip3.configure(text="Data is saved", fg="green")
-
-        #вывод подскази "заполните все поля"
+        # check if the email is already exist
+        query_existance = "SELECT email FROM project_schema.user WHERE email = '" + entered_email + "'"
+        cursor.execute(query_existance)
+        exists = cursor.fetchall()
+        if not exists:
+            # fields validation
+            regexp_email = re.compile("[\w]+@([\w-]+\.)+[\w-]+")
+            regexp_keywords = re.compile("[\w]")
+            if regexp_email.match(entered_email) and regexp_keywords.match(entered_keywords):
+                query_adding_user()
+                query_getting_id()
+                creation_keyword_set()
+                query_adding_keywords()
+                tip3.configure(text="Data is saved", fg="green")  # display the "data is saved" message
+            else:
+                tip3.configure(text="Enter valid data",
+                               fg="red")  # display text if the fields are empty or contains invalid data
         else:
-            tip3.configure(text="Fill in all the fields", fg="red")
-
-        # удаление введенных данных в поля для ввода эл почты и ключевых слов
+            tip3.configure(text="Email is already exist", fg="red")  # display the "Email is already exist" message
+        conn.commit()
+        # delete data from email and keywords fields
         email_field.delete(0, END)
         keywords_field.delete(0, END)
 
-    #создание виджетов (текст подсказок, поле для ввода эл почты, поле для ввода ключевых слов,
-    #кнопка "submit") в окне приложения
-    tip1=Label(root,text="Enter your email here:")
+    # create vidgets in the app window
+    tip1 = Label(root, text="Enter your email here:")
     email_field = Entry(root, width=80)
-    tip2=Label(root,text="Enter keywords here:")
+    tip2 = Label(root, text="Enter keywords here:")
     keywords_field = Entry(root, width=130)
-    tip3=Label(root)
+    tip3 = Label(root)
     submit_button = Button(root, text="Submit", width=15, height=3, activebackground="green", command=button_clicked)
     tip1.pack()
     email_field.pack()
@@ -76,5 +94,6 @@ def start_interface():
 
     root.mainloop()
     conn.close()
+
 
 start_interface()
