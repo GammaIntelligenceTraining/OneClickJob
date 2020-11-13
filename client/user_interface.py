@@ -5,7 +5,6 @@ import re
 conn = mysql.connector.connect(user='root', password='123456', host='127.0.0.1', database='project_schema')
 cursor = conn.cursor()
 
-
 def start_interface():
     root = Tk()
     root.title("Keywords input form")
@@ -14,25 +13,19 @@ def start_interface():
     # function for the "Submit" button (saving email and keywords into DB and deleting data from fields)
     def button_clicked():
 
-        entered_email = email_field.get()
-        entered_keywords = keywords_field.get()
-        print(entered_email)
-        print(entered_keywords)
-
-        # functions for accessing the data base:
-        # insert email into the "user" table
+        # function sends query to the DB to insert email into the "user" table
         def query_adding_user():
             query_adding_user = "INSERT INTO `user` (`email`) VALUES ('" + entered_email + "');"
             cursor.execute(query_adding_user)
 
-        # get user id from the "user" table
+        # function gets user id from the DB, the "user" table
         def query_getting_id():
             query_getting_id = "SELECT id FROM project_schema.user WHERE email = '" + entered_email + "'"
             cursor.execute(query_getting_id)
             id = cursor.fetchone()[0]
             return id
 
-        # insert user id and keywords into the "user_keyword" table
+        # function sends query to the DB to insert user id and keywords into the "user_keyword" table
         def query_adding_keywords():
             keyword_set = creation_keyword_set()
             for keyword in keyword_set:
@@ -41,7 +34,7 @@ def start_interface():
                 cursor.execute(query_adding_keywords)
                 conn.commit()
 
-        # create keywords set from entered string (with deleting extra spaces and duplicate words)
+        # function creates keywords set from entered string (with deleting extra spaces and duplicate words)
         def creation_keyword_set():
             raw_keywords_list = entered_keywords.split(",")
             print(raw_keywords_list)
@@ -54,7 +47,12 @@ def start_interface():
             print(keyword_set)
             return keyword_set
 
-        # check if the email is already exist
+        # getting entered data from email and keywords fields
+        entered_email = email_field.get()
+        entered_keywords = keywords_field.get()
+        print(entered_email)
+        print(entered_keywords)
+        # checking that the email is not in the DB and sending queries to the DB to add new user and keywords
         query_existance = "SELECT email FROM project_schema.user WHERE email = '" + entered_email + "'"
         cursor.execute(query_existance)
         exists = cursor.fetchall()
