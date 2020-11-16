@@ -30,6 +30,14 @@ def getLinks(url):
         links.append(link.get('href'))
     return links
 
+def getWorkLinks(url):
+    html_page = urllib.request.urlopen(url)
+    soup = BeautifulSoup(html_page, features="html.parser")
+    links = []
+    for link in soup.findAll('a'):
+        links.append(link.get('href'))
+    return links
+
 url = "https://www.linkedin.com"
 print(url)
 
@@ -49,6 +57,18 @@ driver.find_element_by_id("password").clear()
 driver.find_element_by_id("password").send_keys("244466666Valera")
 driver.find_element_by_class_name("login__form_action_container ").click()
 time.sleep(5)
-driver.find_element_by_class_name("global-nav__me-photo ghost-person ember-view")
+#driver.find_element_by_class_name("global-nav__me-photo ghost-person ember-view")
+if (driver.find_element_by_class_name('artdeco-button__icon') == True):
+    driver.find_element_by_class_name('artdeco-button__icon').click()
+time.sleep(2)
+#print(driver.find_elements_by_class_name("global-nav__primary-link ember-view"))
+driver.get("https://www.linkedin.com/jobs/")
+#driver.find_element_by_id('global-nav-icon--mercado__jobs--active').click()
+driver.find_element_by_class_name("jobs-search-box__text-input").clear()
+driver.implicitly_wait(2)
+driver.find_element_by_partial_link_text("Search").click()
+#print(driver.current_url)
+print(getWorkLinks(driver.current_url))
+
 
 
